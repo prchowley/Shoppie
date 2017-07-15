@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="NavigationBar">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shoppie" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vZR-fo-ZwC">
+                    <rect key="frame" x="255" y="24" width="91" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="0k6-n0-JO1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="26"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VHK-ch-568">
+                    <rect key="frame" x="536" y="0.0" width="64" height="64"/>
+                    <color key="backgroundColor" red="0.87058823529999996" green="0.50196078430000002" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="bEf-rq-Weh"/>
+                    </constraints>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <inset key="contentEdgeInsets" minX="0.0" minY="10" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" image="cart">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="bEf-rq-Weh"/>
+                        </mask>
+                    </variation>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1FS-qz-a9P">
+                    <rect key="frame" x="472" y="0.0" width="64" height="64"/>
+                    <color key="backgroundColor" red="0.87058823529999996" green="0.50196078430000002" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="64" id="DZS-1P-qih"/>
+                    </constraints>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <inset key="contentEdgeInsets" minX="0.0" minY="10" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" image="search">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnSearchAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="8Yn-0n-sXt"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search items here.." textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="a7E-Xm-zlZ">
+                    <rect key="frame" x="472" y="28" width="0.0" height="19"/>
+                    <constraints>
+                        <constraint firstAttribute="width" id="Alf-aY-NfY"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="0.87058823529999996" green="0.50196078430000002" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="1FS-qz-a9P" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="1Le-Z1-DtY"/>
+                <constraint firstAttribute="trailing" secondItem="VHK-ch-568" secondAttribute="trailing" id="2lk-jK-4VD"/>
+                <constraint firstAttribute="bottom" secondItem="1FS-qz-a9P" secondAttribute="bottom" id="CaH-Lq-Scs"/>
+                <constraint firstItem="VHK-ch-568" firstAttribute="centerY" secondItem="1FS-qz-a9P" secondAttribute="centerY" id="K6n-9l-3le"/>
+                <constraint firstItem="VHK-ch-568" firstAttribute="leading" secondItem="1FS-qz-a9P" secondAttribute="trailing" id="Rvs-gm-1RL"/>
+                <constraint firstItem="a7E-Xm-zlZ" firstAttribute="centerY" secondItem="1FS-qz-a9P" secondAttribute="centerY" constant="5" id="Xk2-yY-fnM"/>
+                <constraint firstItem="vZR-fo-ZwC" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="aUy-ok-Ye6"/>
+                <constraint firstItem="vZR-fo-ZwC" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="8" id="aee-HV-dyj"/>
+                <constraint firstItem="VHK-ch-568" firstAttribute="height" secondItem="1FS-qz-a9P" secondAttribute="height" id="bdO-4N-ILq"/>
+                <constraint firstItem="1FS-qz-a9P" firstAttribute="leading" secondItem="a7E-Xm-zlZ" secondAttribute="trailing" id="dx5-5m-gCg"/>
+                <constraint firstItem="VHK-ch-568" firstAttribute="width" secondItem="1FS-qz-a9P" secondAttribute="width" id="hXu-IH-kTG"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnCart" destination="VHK-ch-568" id="c8t-B3-e92"/>
+                <outlet property="btnSearch" destination="1FS-qz-a9P" id="uhw-EC-Gry"/>
+                <outlet property="constHeightTitle" destination="0k6-n0-JO1" id="es1-Xi-NOV"/>
+                <outlet property="constWidthTextSearch" destination="Alf-aY-NfY" id="no8-NV-fy1"/>
+                <outlet property="constXlblTitle" destination="aUy-ok-Ye6" id="E2E-Tc-Ku6"/>
+                <outlet property="constYlblTitle" destination="aee-HV-dyj" id="DfG-qq-Qap"/>
+                <outlet property="lblTitle" destination="vZR-fo-ZwC" id="hAf-W2-NvD"/>
+                <outlet property="txtSearch" destination="a7E-Xm-zlZ" id="4dZ-jD-zl6"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="cart" width="22" height="22"/>
+        <image name="search" width="22" height="22"/>
+    </resources>
+</document>
